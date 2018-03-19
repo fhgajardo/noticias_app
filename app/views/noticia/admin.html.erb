@@ -25,8 +25,8 @@
         <td><%= noticium.cuerpo.truncate(503) %></td>
         <td><%= noticium.comentarios.count %></td>
         <% if user_signed_in? %>
-          <td><%= link_to 'Edit', edit_noticium_path(noticium) %></td>
-          <td><%= link_to 'Destroy', noticium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Editar', edit_noticium_path(noticium) %></td>
+          <td><%= link_to 'Eliminar', noticium, method: :delete, data: { confirm: '¿Estas seguro que deseas eliminarla?' } %></td>
         <% end %>
 
         <td><%= link_to 'Leer completa', noticium %></td>

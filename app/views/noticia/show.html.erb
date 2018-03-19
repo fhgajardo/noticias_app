@@ -27,6 +27,7 @@
 <table>
 <% @noticium.comentarios.each do |comentario| %>
 	<tr>
+    <td><%= comentario.nombre %></td>
 		<td><%= comentario.contenido %></td>
 		<td><%= comentario.fecha %> </td>
 	</tr>

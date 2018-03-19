@@ -11,24 +11,25 @@
     </div>
   <% end %>
 
-  <%= form.hidden_field :fecha, :value => Date.today %>
-
   <div class="field">
-    <%= form.label :cuerpo %>
-    <%= form.text_area :cuerpo, id: :noticium_cuerpo %>
+    <%= form.label :titular %>
+    <%= form.text_field :titular, id: :noticium_titular %>
   </div>
+
+  <%= form.hidden_field :fecha, :value => Date.today %>
 
   <div class="field">
     <%= form.label :bajada %>
     <%= form.text_area :bajada, id: :noticium_bajada %>
   </div>
 
+
   <div class="field">
-    <%= form.label :titular %>
-    <%= form.text_field :titular, id: :noticium_titular %>
+    <%= form.label :cuerpo %>
+    <%= form.text_area :cuerpo, id: :noticium_cuerpo %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Confirmar'%>
   </div>
 <% end %>
